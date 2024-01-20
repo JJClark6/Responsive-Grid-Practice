@@ -1,0 +1,50 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    padding-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1rem;
+}
+
+.grid-container {    
+    display: grid;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+
+.grid {
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.grid ul li {
+    padding: 1rem;
+    list-style: none;
+}
+
+@media (min-width: 800px) {
+    .grid-container {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
